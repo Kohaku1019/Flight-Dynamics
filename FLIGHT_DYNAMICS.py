@@ -11,7 +11,7 @@ import os
 
 def descomposicion_velocidades (theta,u, v, w):
     alpha = np.degrees(math.atan(w/u))
-    gamma = alpha - theta
+    gamma = theta - alpha
     V = math.sqrt(u**2 + v**2 + w**2)
     beta=np.degrees(math.asin(v/V))
     vector_velocidades = [[u],
